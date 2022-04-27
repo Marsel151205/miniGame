@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_picture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/im_photo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/cd_picture">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DFC024"
+            android:onClick="changeImage"
+            android:text="KIA"
+            android:textColor="@color/black"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DFC024"
+            android:onClick="changeImage"
+            android:text="Range Rover"
+            android:textColor="@color/black"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DFC024"
+            android:onClick="changeImage"
+            android:text="Lexus"
+            android:textColor="@color/black"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout_one">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_btn_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#24DF27"
+            android:onClick="changeImage"
+            android:text="KIA"
+            android:textColor="#F602A5"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#24DF27"
+            android:onClick="changeImage"
+            android:text="RANGE ROVER"
+            android:textColor="#F602A5"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_btn_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#24DF27"
+            android:onClick="changeImage"
+            android:text="LEXUS"
+            android:textColor="#F602A5"
+            app:cornerRadius="50dp"
+            app:strokeColor="#3740EF"
+            app:strokeWidth="3dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
